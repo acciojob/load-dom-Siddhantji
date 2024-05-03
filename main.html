@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>DOM Load Example</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to write "DOM load success" on the web page
+            function writeMessage() {
+                var message = "DOM load success";
+                // Create a new <p> element
+                var paragraph = document.createElement("p");
+                // Set the text content of the <p> element to the message
+                paragraph.textContent = message;
+                // Append the <p> element to the body of the document
+                document.body.appendChild(paragraph);
+            }
+
+            // Call the writeMessage function when the DOM is loaded
+            writeMessage();
+        });
+    </script>
 </head>
-
 <body>
-	<h1 id="h"></h1>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="script.js">
-</script>
-
+    <!-- Content goes here -->
 </body>
-
 </html>
+
