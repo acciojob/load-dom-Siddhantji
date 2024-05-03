@@ -5,18 +5,11 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Function to write "DOM load success" on the web page
-            function writeMessage() {
-                var message = "DOM load success";
-                // Create a new <p> element
-                var paragraph = document.createElement("h1");
-                // Set the text content of the <p> element to the message
-                paragraph.textContent = message;
-                // Append the <p> element to the body of the document
-                document.body.appendChild(paragraph);
-            }
 
-            // Call the writeMessage function when the DOM is loaded
-            writeMessage();
+               
+                // Create a new <p> element
+				document.body.textContent= "DOM load success";
+             
         });
     </script>
 </head>
